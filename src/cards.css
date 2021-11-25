@@ -6,6 +6,12 @@ html {
   background-color: #ffffff;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon {
   color: #bcd2da;
 }
@@ -78,14 +84,15 @@ html {
   flex-basis: auto;
 }
 
-@media screen and (max-device-width: 1025px) {
+@media (max-width: 768px) {
   .cardGroup {
-    width: 710px;
+    width: 320px;
+    flex-wrap: wrap;
   }
 }
 
-@media screen and (max-device-width: 768px) {
+@media (min-width: 769px) {
   .cardGroup {
-    width: 320px;
+    width: 710px;
   }
 }
